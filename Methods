@@ -1,0 +1,22 @@
+class Fighter:
+  def __init__(self, name):
+    self.name = name
+    self.health = 100
+    self.damage = 10
+
+#create method
+  
+  def attack(self, other_guy):                          
+    other_guy.health = other_guy.health - self.damage
+    
+brane = Fighter("Brane")
+you = Fighter("Matt")    
+
+print(brane.name)
+print(you.name)
+
+you.attack(brane)
+print(brane.health)
+
+# The other kind of instance attribute reference is a method. A method is a function that “belongs to” an object. 
+In Python, the term method is not unique to class instances: other object types can have methods as well...
