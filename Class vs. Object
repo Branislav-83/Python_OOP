@@ -1,0 +1,15 @@
+class Fighters:
+  def __init__(self,name):
+    self.name = name
+
+qazi = Fighters("Qazi")
+bob = Fighters("Brane")
+print(qazi.name)
+print(bob.name)
+
+
+# Fighters is the  class name.
+# init is a method.
+# .name is a attribute.
+# qazi is the  object created from the class Fighters.
+# bob is another object created from class fighters.
