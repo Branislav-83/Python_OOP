@@ -21,3 +21,7 @@ print(you)
 
 you.attack(qazi)
 print(qazi)    
+
+
+
+# String formatting!!!
