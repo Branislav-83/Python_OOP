@@ -1,0 +1,33 @@
+import tkinter as tk
+
+
+def doorbell(event):
+    print("You buy 5 Bannanas")
+def ten(event):    
+    print("you buy 10 aplle")
+
+
+
+
+window = tk.Tk()
+window.geometry("300x200")
+
+
+alabel = tk.Label(text="Bannana")
+alabel.grid(column=0, row=0)
+
+blabel = tk.Label(text="Apple")
+blabel.grid(column=1, row =0)
+
+button = tk.Button(window,text="doorbell")
+button.grid(column=0)
+
+button2 = tk.Button(window,text="10")  #window-to connect button with window(300x200)
+button2.grid(column=1,row=1)
+
+button.bind("<Button-1>", doorbell)
+button2.bind("<Button-1>", ten)
+
+
+
+window.mainloop()
