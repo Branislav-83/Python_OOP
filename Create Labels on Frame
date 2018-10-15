@@ -1,0 +1,11 @@
+import tkinter as tk
+from tkinter import ttk
+
+
+window = tk.Tk()
+window.geometry("300x200")
+
+alabel = ttk.label(text="Bannana")
+alabel.grid(column=0, row=0)
+
+window.mainloop() 
