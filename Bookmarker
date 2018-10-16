@@ -1,45 +1,44 @@
 import tkinter as tk
 import webbrowser
 
-URL = 'https://cleverprogrammer.com'
 
+def five(event):
+    print("you buy five Bannanas")
 
-# Event handler function
-def doorbell(event):
-    print("You rang the doorbell!!")
+def ten(event):
+    print("you buy ten Apples")
 
+def  web_p(event):
+    webbrowser.open_new_tab("https://cleverprogrammer.teachable.com/courses/enrolled")
+    
 
-def open_cp(event):
-    webbrowser.open_new_tab(URL)
-
-
-def cp_blog(event):
-    webbrowser.open_new_tab(URL + "/blog")
 
 
 window = tk.Tk()
 window.geometry("300x200")
 
-alabel = tk.Label(text="Banana")
+alabel = tk.Label(text="Bannana")
 alabel.grid(column=0, row=0)
 
-blabel = tk.Label(text="Home")
+blabel = tk.Label(text="Apple")
 blabel.grid(column=1, row=0)
 
-clabel = tk.Label(text="Blog")
+clabel = tk.Label(text="Courses")
 clabel.grid(column=2, row=0)
 
-button = tk.Button(window, text="Doorbell")
+
+button = tk.Button(window,text="5")
 button.grid(column=0)
 
-button2 = tk.Button(window, text="Clever Programmer")
+button2 = tk.Button(window,text="10")
 button2.grid(column=1, row=1)
 
-button3 = tk.Button(window, text="CP Blog")
+button3 = tk.Button(window, text="Enter the course")
 button3.grid(column=2, row=1)
 
-button.bind("<Button-1>", doorbell)
-button2.bind("<Button-1>", open_cp)
-button3.bind("<Button-1>", cp_blog)
+button.bind("<Button-1>", five)
+button2.bind("<Button-1>", ten)
+button3.bind("<Button-1>", web_p)
+
 
 window.mainloop()
