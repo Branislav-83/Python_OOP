@@ -1,0 +1,23 @@
+# create a class called person
+# create init method
+# 2 attributes(name, birthdate)
+# create an object from the person class
+# add age method(calculate your age)
+
+import datetime
+
+class Person:
+  def __init__(self, name, birthdate):
+    self.name = name
+    self.birthdate = birthdate
+
+  def age(self):
+    today = datetime.date.today()
+    age = today.year - self.birthdate.year  
+    return age
+
+brane = Person("Brane",datetime.date(1983, 10, 11))
+
+print(brane.name)
+print(brane.birthdate)
+print(brane.age())
