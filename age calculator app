@@ -1,23 +1,66 @@
-# create a class called person
-# create init method
-# 2 attributes(name, birthdate)
-# create an object from the person class
-# add age method(calculate your age)
-
 import datetime
+import tkinter as tk
 
+# create a frame
+window = tk.Tk()
+# create a frame geomotry
+window.geometry("400x400")
+#set the tittle oof the frame
+window.title("Age Calculator APP")
+
+# adding labels
+year_label = tk.Label(text="Year")
+year_label.grid(column=0, row=1)
+month_label = tk.Label(text="Month")
+month_label.grid(column=0, row=2)
+day_label = tk.Label(text="Day")
+day_label.grid(column=0, row=3)
+
+# adding Entries
+year_entry = tk.Entry()
+year_entry.grid(column=1, row=1)
+month_entry = tk.Entry()
+month_entry.grid(column=1, row=2)
+day_entry = tk.Entry()
+day_entry.grid(column=1, row=3)
+
+# Connect Entries with Button
+def calculate_age():       
+    print(year_entry.get())
+    print(month_entry.get())
+    print(day_entry.get())
+
+# Construct Object by Retrieving Data
+    brane = Person("Brane", datetime.date(int(year_entry.get()),int(month_entry.get()),int(day_entry.get())))
+    print(brane.age())                                      
+    print("Button was clicked")                                        
+    
+# create button
+calculate_button = tk.Button(text="Calculate now", command=calculate_age)
+calculate_button.grid(column=1, row=4)
+
+# create a class
 class Person:
   def __init__(self, name, birthdate):
     self.name = name
     self.birthdate = birthdate
 
+#Add Age Method
   def age(self):
     today = datetime.date.today()
     age = today.year - self.birthdate.year  
     return age
+  
+# Optional(#)
+#brane = Person("Brane",datetime.date(1983, 10, 11))
+#print(brane.name)
+#print(brane.birthdate)
+#print(brane.age())
 
-brane = Person("Brane",datetime.date(1983, 10, 11))
+window.mainloop()
 
-print(brane.name)
-print(brane.birthdate)
-print(brane.age())
+#link: https://repl.it/@Branko23/VerifiableDefenselessMarketing
+
+
+    
+    
