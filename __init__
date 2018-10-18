@@ -14,3 +14,8 @@ print(marija.name, marija.grade, marija.age)
 print(dejan.name)
 print(dejan.grade)
 print(dejan.age)
+
+
+
+# __init__" is a reseved method in python classes. It is known as a constructor in object oriented concepts.  
+This method called when an object is created from the class and it allow the class to initialize the attributes of a class.
