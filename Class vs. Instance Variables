@@ -13,7 +13,7 @@ print(BestCourse.website)
 print(learn_commend_line_course.name)    #OBJECT_NAME.METHOD
 print(BestCourse.website)    # CLASS_NAME.METHOD
 
-
+# class variable is tide directly to a class, not to objcet
 # you make  class of best courses and insert objects
 # class- BestCourse , object- python_course 
 
