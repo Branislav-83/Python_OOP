@@ -1,0 +1,16 @@
+class Student:
+  def __init__(self, name, grade, age):
+    self.name = name
+    self.grade = grade
+    self.age = age
+
+bob = Student("BOB", 89 , 25)
+marija = Student("Marija", 98, 22)
+dejan = Student("Dejan", 70, 38)
+
+print(bob.name, bob.grade, bob.age)
+print(marija.name, marija.grade, marija.age)
+
+print(dejan.name)
+print(dejan.grade)
+print(dejan.age)
