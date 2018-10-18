@@ -14,10 +14,9 @@ print(learn_commend_line_course.name)    #OBJECT_NAME.METHOD
 print(BestCourse.website)    # CLASS_NAME.METHOD
 
 
-# you make  class od best courses and insert objects
+# you make  class of best courses and insert objects
 # class- BestCourse , object- python_course 
 
-
-# Class Variables are variables that are shared by all instances of a class. 
+""" Class Variables are variables that are shared by all instances of a class. 
 So while instance variable can be unique for each instance like our name,email and pay; 
-class variable should be the-same for each instance.
+class variable should be the-same for each instance."""
