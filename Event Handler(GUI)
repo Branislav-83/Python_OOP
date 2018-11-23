@@ -22,7 +22,7 @@ blabel.grid(column=1, row =0)
 button = tk.Button(window,text="doorbell")
 button.grid(column=0)
 
-button2 = tk.Button(window,text="10")  #window-to connect button with window(300x200)
+button2 = tk.Button(window,text="10")  #variable "window" -to connect button with window(300x200)
 button2.grid(column=1,row=1)
 
 button.bind("<Button-1>", doorbell)
